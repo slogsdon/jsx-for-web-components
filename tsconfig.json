@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
         "declaration": true,
+        "declarationDir": "types",
         "lib": ["dom", "esnext"],
-        "module": "esnext",
         "moduleResolution": "node",
         "outDir": "lib",
         "strict": true,
-        "target": "es5"
+        "target": "es2015"
     },
     "include": [
         "src/**/*"

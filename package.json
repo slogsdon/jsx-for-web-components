@@ -4,11 +4,11 @@
   "author": "Shane Logsdon <shane@shanelogsdon.com>",
   "license": "MIT",
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "types": "types/index.d.ts",
   "private": true,
   "scripts": {
     "build": "tsc",
-    "clean": "rm -rf lib",
+    "clean": "rm -rf coverage lib types",
     "test": "tslint --project . && jest"
   },
   "devDependencies": {
