@@ -1,6 +1,6 @@
 {
   "name": "jsx-for-web-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Shane Logsdon <shane@shanelogsdon.com>",
   "license": "MIT",
   "main": "lib/index.js",
