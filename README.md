@@ -14,7 +14,7 @@
 ## Installation
 
 ```
-yarn install jsx-for-web-components
+yarn add jsx-for-web-components
 ```
 
 ## Getting Started
@@ -22,7 +22,7 @@ yarn install jsx-for-web-components
 We'll use TypeScript and [Rollup](https://rollupjs.org) to build for the browser. Let's start with pulling in some dependencies:
 
 ```
-yarn install --dev typescript rollup rollup-plugin-node-resolve rollup-plugin-typescript2
+yarn add --dev typescript rollup rollup-plugin-node-resolve rollup-plugin-typescript2
 ```
 
 A couple configuration files to help the project build correctly:
