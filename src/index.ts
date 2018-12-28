@@ -10,4 +10,5 @@
 export * from "./dom";
 export * from "./helper";
 export * from "./jsx-custom-element";
+export * from "./render";
 export * from "./types";
