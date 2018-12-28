@@ -1,6 +1,13 @@
 import { createTemplate } from "./dom";
+import { register } from "./register";
 
 export class JSXCustomElement extends HTMLElement {
+  public static elementName: string | undefined = undefined;
+
+  public static register() {
+    return register(this);
+  }
+
   private template: HTMLTemplateElement;
 
   constructor() {

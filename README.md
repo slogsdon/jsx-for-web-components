@@ -73,12 +73,14 @@ Define your custom element:
 import { h, JSXCustomElement } from "jsx-for-web-components";
 
 class ExampleElement extends JSXCustomElement {
+  static elementName = "example-element";
+
   public render() {
     return <div id="testing">hello</div>;
   }
 }
 
-window.customElements.define('example-element', ExampleElement);
+ExampleElement.register();
 ```
 
 Leverage your custom element:
