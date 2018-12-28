@@ -3,6 +3,7 @@ import {
   setProp,
   setProps,
 } from "../src/properties";
+import { IProps } from "../src/types";
 
 describe("isCustomProp", () => {
   it("should return false", () => {
@@ -105,5 +106,13 @@ describe("setProps", () => {
     expect(el.getAttribute("data-property")).toBe("value");
     expect(el.hasAttribute("property")).toBe(true);
     expect((el as any).property).toBe(true);
+  });
+
+  it("should return empty list for no props", () => {
+    if (el === undefined) {
+      return;
+    }
+
+    expect(setProps(el, (undefined as unknown as IProps))).toHaveLength(0);
   });
 });

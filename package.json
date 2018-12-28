@@ -25,7 +25,8 @@
     },
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*"
+      "src/**/*",
+      "!src/native-shim.ts"
     ],
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
