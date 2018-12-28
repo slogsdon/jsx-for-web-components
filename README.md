@@ -1,5 +1,7 @@
 # jsx-for-web-components
 
+[![Build Status](https://travis-ci.com/slogsdon/jsx-for-web-components.svg?branch=master)](https://travis-ci.com/slogsdon/jsx-for-web-components)
+
 > WIP: A basic JSX factory for use in projects leveraging [web components](https://www.webcomponents.org/)
 
 ### Features
