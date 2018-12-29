@@ -4,6 +4,7 @@
 !/lib
 !/types
 
+.travis.yml
 tsconfig.json
 tsconfig.test.json
 tslint.json
