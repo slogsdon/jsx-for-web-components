@@ -38,15 +38,15 @@ it("renders custom element children", () => {
 });
 
 it("renders with attributes", () => {
-  const attributesNoChildren = createElement(<div id="test" enabled data-bool={true}></div>) as Element;
+  const attributesNoChildren = createElement(<div id="test" aria-enabled data-bool={true}></div>) as Element;
   const result = renderToStaticMarkup(attributesNoChildren);
-  expect(result).toBe(`<div id="test" enabled="enabled" data-bool="data-bool"></div>`);
+  expect(result).toBe(`<div id="test" aria-enabled="aria-enabled" data-bool="data-bool"></div>`);
 });
 
 it("renders custom elements with attributes", () => {
-  const attributesNoChildrenCustom = createElement(<x-div id="test" enabled data-bool={true}></x-div>) as Element;
+  const attributesNoChildrenCustom = createElement(<x-div id="test" aria-enabled data-bool={true}></x-div>) as Element;
   const result = renderToStaticMarkup(attributesNoChildrenCustom);
-  expect(result).toBe(`<x-div id="test" enabled="enabled" data-bool="data-bool"></x-div>`);
+  expect(result).toBe(`<x-div id="test" aria-enabled="aria-enabled" data-bool="data-bool"></x-div>`);
 });
 
 it("renders text children with attributes", () => {
@@ -58,19 +58,23 @@ it("renders text children with attributes", () => {
 it("renders element children with attributes", () => {
   const attributesElementChild = createElement(
     <div id="wrapper">
-      <span id="test" enabled data-bool={true}></span>
+      <span id="test" aria-enabled data-bool={true}></span>
     </div>,
   ) as Element;
   const result = renderToStaticMarkup(attributesElementChild);
-  expect(result).toBe(`<div id="wrapper"><span id="test" enabled="enabled" data-bool="data-bool"></span></div>`);
+  expect(result).toBe(
+    `<div id="wrapper"><span id="test" aria-enabled="aria-enabled" data-bool="data-bool"></span></div>`,
+  );
 });
 
 it("renders custom element children with attributes", () => {
   const attributesCustomElementChild = createElement(
     <div id="wrapper">
-      <x-span id="test" enabled data-bool={true}></x-span>
+      <x-span id="test" aria-enabled data-bool={true}></x-span>
     </div>,
   ) as Element;
   const result = renderToStaticMarkup(attributesCustomElementChild);
-  expect(result).toBe(`<div id="wrapper"><x-span id="test" enabled="enabled" data-bool="data-bool"></x-span></div>`);
+  expect(result).toBe(
+    `<div id="wrapper"><x-span id="test" aria-enabled="aria-enabled" data-bool="data-bool"></x-span></div>`,
+  );
 });

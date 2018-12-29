@@ -40,5 +40,8 @@
       "json",
       "node"
     ]
+  },
+  "dependencies": {
+    "csstype": "^2.6.0"
   }
 }
