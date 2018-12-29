@@ -1,6 +1,6 @@
 {
   "name": "jsx-for-web-components",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Shane Logsdon <shane@shanelogsdon.com>",
   "license": "MIT",
   "main": "lib/index.js",
@@ -8,6 +8,7 @@
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf coverage lib types",
+    "prepare": "$npm_execpath run build",
     "test": "tslint --project . && jest"
   },
   "devDependencies": {
